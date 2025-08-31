@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Results</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="result-container">
+    <h1>Prediction Results</h1>
+
+    <div class="scheme-box">
+      <h2>PMFBY</h2>
+      <p class="{{ 'eligible' if results.eligible_pmfby == 'Eligible' else 'not-eligible' }}">
+        {{ 'Eligible' if results.eligible_pmfby == 'Eligible' else 'Not Eligible' }}
+      </p>
+      {% if results.eligible_pmfby == 'Eligible' %}
+        <a href="https://pmfby.gov.in/" class="scheme-link">Apply Here</a>
+      {% else %}
+        <a href="https://pmfby.gov.in/" class="scheme-link" target="_blank">Visit website for more info</a>
+      {% endif %}
+    </div>
+
+    <div class="scheme-box">
+      <h2>PM-KISAN</h2>
+      <p class="{{ 'eligible' if results.eligible_pmkisan == 'Eligible' else 'not-eligible' }}">
+        {{ 'Eligible' if results.eligible_pmkisan == 'Eligible' else 'Not Eligible' }}
+      </p>
+      {% if results.eligible_pmkisan == 'Eligible' %}
+        <a href="https://pmkisan.gov.in/" class="scheme-link">Apply Here</a>
+      {% else %}
+        <a href="https://pmkisan.gov.in/" class="scheme-link" target="_blank">Visit website for more info</a>
+      {% endif %}
+    </div>
+
+    <div class="scheme-box">
+      <h2>FPO Support</h2>
+      <p class="{{ 'eligible' if results.eligible_fpo_support == 'Eligible' else 'not-eligible' }}">
+        {{ 'Eligible' if results.eligible_fpo_support == 'Eligible' else 'Not Eligible' }}
+      </p>
+      {% if results.eligible_fpo_support == 'Eligible' %}
+        <a href="https://sfacindia.com/" class="scheme-link">Apply Here</a>
+      {% else %}
+        <a href="https://sfacindia.com/" class="scheme-link" target="_blank">Visit website for more info</a>
+      {% endif %}
+    </div>
+
+    <a href="/" class="back-button">⟵ Back to Form</a>
+  </div>
+</body>
+</html>

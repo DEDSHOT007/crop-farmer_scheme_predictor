@@ -1,0 +1,131 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('../static/bg-crop.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: rgba(255,255,255,0.92);
+  border-radius: 12px;
+  box-shadow: 0 0 16px rgba(44, 62, 80, 0.25);
+}
+
+.result-container {
+  width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: rgba(255,255,255,0.92);
+  border-radius: 12px;
+  box-shadow: 0 0 16px rgba(44, 62, 80, 0.25);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  letter-spacing: 1px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+
+button:hover {
+  background-color: #219150;
+}
+
+.scheme-box {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  padding: 24px 20px;
+  margin: 24px auto;
+  max-width: 400px;
+  text-align: center;
+  border: 2px solid #27ae60;
+  opacity: 0.97;
+}
+
+.scheme-box h2 {
+  color: #27ae60;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.scheme-box p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.scheme-link {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 6px;
+  background: #27ae60;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+
+.scheme-link:hover {
+  background: #219150;
+}
+
+.back-button {
+  display: block;
+  margin: 32px auto 0 auto;
+  padding: 8px 18px;
+  border-radius: 6px;
+  background: #2c3e50;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  width: fit-content;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background: #34495e;
+}
+
+.eligible {
+  color: green;
+}
+
+.not-eligible {
+  color: red;
+}
+
